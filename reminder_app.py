@@ -18,7 +18,7 @@ def make_call(twilio_config):
     with open(twilio_config) as f:
         keys = yml.load(f)
     client = Client(keys['acount_sid'], keys['auth_token'])
-    call = client.calls.create(to='+919110809054', from_=keys['ph_number'], url='https://demo.twilio.com/docs/voice.xml')
+    call = client.calls.create(to='+919110******', from_=keys['ph_number'], url='https://demo.twilio.com/docs/voice.xml')
     print(call.sid)
     
     
